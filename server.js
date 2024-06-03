@@ -54,7 +54,7 @@ app.post('/send-email', (req, res) => {
 
 
 app.get('/download-resume', (req, res) => {
-  const file = `${__dirname}/public/resume.doc`;
+  const file = `${__dirname}/public/Resume-Portfolio.docx`;
   res.download(file, 'resume.doc', (err) => {
     if (err) {
       console.error('Download Error:', err);
